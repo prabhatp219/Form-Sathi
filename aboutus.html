@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Sathi Portal</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="icon" href="sp2.png" type="image/x-icon">
+    <style>
+        /* Initially hide the content */
+        .hidden {
+            display: none;
+        }
+
+        /* Small loader at the top-right */
+        .loader {
+            border: 4px solid #f3f3f3; /* Light gray background */
+            border-top: 4px solid #3498db; /* Blue color for the rotating part */
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            animation: spin 1.5s linear infinite; /* Rotating animation */
+            position: fixed;
+            top: 20px; /* Adjust as needed */
+            left: 20px; /* Adjust as needed */
+            z-index: 9999; /* Ensure it's above other content */
+        }
+
+        /* Define the spinning animation */
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body style="overflow-x: hidden;">
+    
+    <!-- Loader placed at top right -->
+    <div class="loader" id="loader"></div>
+
+    <div class="container hidden" style="height: 100%;" id="mainContent">
+        <div class="bg" style="height: 100%;" >
+            
+            <div class="grey">
+                <div class="homie"><p><a href="index.html" style="text-decoration: none; color: rgb(107, 107, 183);font-weight: bold;">HOME</a></p></div>
+            </div>
+    
+            <section class="about-portal">
+                <h1>ABOUT US</h1>
+                <p>
+                    Welcome to Form Sathi Portal, your one-stop platform for accessing government forms and services online. <b>Our mission is to make government services more accessible, user-friendly, and convenient for citizens by providing them with all the necessary tools and information at their fingertips.</b>
+                </p>
+                <p>
+                    At Form Sathi, we understand that dealing with government paperwork can be overwhelming, and we are here to simplify the process. Whether you're looking to apply for a scholarship, register for government schemes, or access important forms, we offer a wide range of services to help you navigate through the complex bureaucracy with ease.
+
+                    Our portal is designed to cater to individuals from all walks of life. <b>We aim to empower citizens with the knowledge and resources needed to apply for various government services quickly and effectively. </b> Our team works relentlessly to ensure that you have access to accurate, up-to-date information and easy-to-fill forms for a variety of government schemes.
+                    
+                    We believe in the power of technology to bridge the gap between the government and the people, ensuring that every citizen has equal access to essential services.
+                </p>
+                <p>
+                    <p style="font-size: 1.5rem;font-weight: bold;">What We Do:-</p>
+                    <ul>
+                        <li><strong>Government Forms:</strong> Easily access forms required for various government schemes and services.</li>
+                        <li><strong>Service Information:</strong> Get detailed information about each service, eligibility, and the application process.</li>
+                        <li><strong>Guides and Assistance:</strong> Step-by-step guides to help you through each form and application process.</li>
+                        <li><strong>Trusted Platform:</strong> All our information is verified and sourced from official government resources.</li>
+                    </ul>
+                </p>
+            </section>
+        </div>
+    </div>
+
+    <script>
+        // Delay the loading of content by 3 seconds (3000 milliseconds)
+        setTimeout(function() {
+            // Hide the loader and show the main content
+            document.getElementById('loader').style.display = 'none';
+            document.getElementById('mainContent').classList.remove('hidden');
+        }, 1500);  // 3000 ms = 3 seconds
+    </script>
+</body>
+</html>
