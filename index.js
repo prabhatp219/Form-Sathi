@@ -35,7 +35,7 @@ function filterLinks() {
         slides[slideIndex - 1].style.display = "block";  // Show the current image
 
         // Change image every 2 seconds
-        setTimeout(showSlides, 5000);
+        setTimeout(showSlides, 1500);
     }
 
     // Initialize the slideshow
