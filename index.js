@@ -2,7 +2,7 @@ function filterLinks() {
     const input = document.getElementById('search-box').value.toLowerCase();
     const items = document.querySelectorAll('.focus-item');
     let found = false;
-  
+   // add serch bar
     items.forEach((item) => {
       const text = item.textContent || item.innerText;
       if (text.toLowerCase().includes(input)) {
